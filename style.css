@@ -1,0 +1,63 @@
+/*This is a CSS comment here // doesn't work for comments*/
+body{
+  background-color: white ;
+  color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.input {
+  height: 2rem;
+  margin-left: 0.5rem;
+  width: 4rem;
+  font-size: 1rem;
+}
+.hide{
+  display: none;
+}
+.inputText {
+  height: 2rem;
+  margin-left: 0.5rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+#dropDown {
+  height: 1.5rem;
+}
+
+.addButton {
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.playButton {
+  background-color: green;
+  margin: 1rem;
+  text-align: center;
+  width: 4rem;
+
+}
+
+.stopButton {
+  background-color: red;
+  margin: 1rem;
+  text-align: center;
+  width: 4rem;
+}
+
+.taskList {
+  margin-top: 1rem;
+}
+
+.tasks {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.audio {
+  display: none;
+}

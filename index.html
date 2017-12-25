@@ -1,0 +1,94 @@
+<!--A comment in html looks like this single or multiline-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio player</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <main>
+        <div id="playButton" class="playButton">Play</div>
+        <div id="stopButton" class="stopButton">Stop</div>
+        Day:<input type="number" id="day0" class="input" min="1" max="31"> Hour:
+        <input type="number" id="hour0" class="input" min="0" max="24"> Minute:
+        <input type="number" id="minute0" class="input" min="0" max="59"> Task:
+        <input type "text" class="inputText" id="taskName0" value="Wake up routine"> Audio:
+        <select id="dropDown0">
+          <option value="wakeup">wakeup</option>
+        </select>
+<br>
+        Day:<input type="number" id="day1" class="input" min="1" max="31"> Hour:
+        <input type="number" id="hour1" class="input" min="0" max="24"> Minute:
+        <input type="number" id="minute1" class="input" min="0" max="59"> Task:
+        <input type "text" class="inputText" id="taskName1" value="Breakfast"> Audio:
+        <select id="dropDown1">
+          <option value="breakfast">breakfast</option>
+        </select>
+        <br>
+
+        Day:<input type="number" id="day2" class="input" min="1" max="31"> Hour:
+        <input type="number" id="hour2" class="input" min="0" max="24"> Minute:
+        <input type="number" id="minute2" class="input" min="0" max="59"> Task:
+        <input type "text" class="inputText" id="taskName2" value="Lunch"> Audio:
+        <select id="dropDown2">
+          <option value="lunch">lunch</option>
+        </select>
+        <br>
+
+        Day:<input type="number" id="day3" class="input" min="1" max="31"> Hour:
+        <input type="number" id="hour3" class="input" min="0" max="24"> Minute:
+        <input type="number" id="minute3" class="input" min="0" max="59"> Task:
+        <input type "text" class="inputText" id="taskName3" value="Physical activity"> Audio:
+        <select id="dropDown3">
+          <option value="train">train</option>
+        </select>
+        <br>
+
+        Day:<input type="number" id="day4" class="input" min="1" max="31"> Hour:
+        <input type="number" id="hour4" class="input" min="0" max="24"> Minute:
+        <input type="number" id="minute4" class="input" min="0" max="59"> Task:
+        <input type "text" class="inputText" id="taskName4" value="Going to bed routine"> Audio:
+        <select id="dropDown4">
+          <option value="sleep">sleep</option>
+        </select>
+<br>
+        <input type="number" id="day5" class="input hide" min="1" max="31" value="31">
+        <input type="number" id="hour5" class="input hide" min="0" max="24" value="23">
+        <input type="number" id="minute5" class="input hide" min="0" max="59" value="59">
+        <input type "text" class="inputText hide " id="taskName5" value="null">
+        <select id="dropDown5" class="hide">
+          <option value="wakeup" >Atrium</option>
+        </select>
+
+        <audio controls id="wakeup" class="audio">
+          <source src="music/wakeup.mp3" type="audio/wav">
+        </audio>
+        <audio controls id="breakfast" class="audio">
+          <source src="music/breakfast.mp3" type="audio/wav">
+          </audio>
+        <audio controls id="lunch" class="audio">
+          <source src="music/lunch.mp3" type="audio/mp3">
+          </audio>
+        <audio controls id="train" class="audio">
+          <source src="music/train.mp3" type="audio/mp3">
+          </audio>
+        <audio controls id="sleep" class="audio">
+          <source src="music/sleep.mp3" type="audio/mp3">
+          </audio>
+
+
+
+        <button id="addButton" class="addButton">Save</button>
+
+        <div id="taskList" class="taskList">Task List: </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
